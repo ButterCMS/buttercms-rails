@@ -1,0 +1,17 @@
+<h2>Posts</h2>
+
+<!-- List of posts -->
+<% @posts.each do |post| %>
+  <%= render :partial => 'post', :locals => {:post => post} %>
+<% end %>
+
+<!-- Pagination links -->
+<div>
+  <% if @previous_page %>
+    <%= link_to "Prev", buttercms_blog_path(:page => @previous_page) %>
+  <% end %>
+
+  <% if @next_page %>
+    <%= link_to "Next", buttercms_blog_path(:page => @next_page) %>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<%= content_for :html_title, @category.name %>
+
+<!-- Category name -->
+<h2><%= @category.name %></h2>
+
+<!-- Recent posts -->
+<h4>Recent posts</h4>
+<% @category.recent_posts.each do |post| %>
+  <%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %>
+<% end %>

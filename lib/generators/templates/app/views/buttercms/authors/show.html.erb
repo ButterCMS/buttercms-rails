@@ -1,0 +1,17 @@
+<%= content_for :html_title, "#{@author.first_name} #{@author.last_name}" %>
+<%= content_for :meta_description, @author.bio %>
+
+<!-- Author name -->
+<h2><%= @author.first_name %> <%= @author.last_name %></h2>
+
+<!-- Author profile -->
+<div>
+  <%= @author.title %>
+  <%= @author.bio %>
+</div>
+
+<!-- Recent posts -->
+<h4>Recent posts</h4>
+<% @author.recent_posts.each do |post| %>
+  <%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %>
+<% end %>
