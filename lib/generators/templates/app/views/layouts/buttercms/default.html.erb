@@ -7,9 +7,14 @@
 
     <link rel="alternate" type="application/atom+xml" title="My Blog - Atom" href="<%= buttercms_blog_atom_path %>">
     <link rel="alternate" type="application/rss+xml" title="My Blog - RSS" href="<%= buttercms_blog_rss_path %>">
+
+    <!-- See https://buttercms.com/docs/#cssstyling -->
+    <link rel="stylesheet" href="http://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css">
 </head>
 <body>
-    <%= link_to "Blog home", buttercms_blog_path %>
+    <div>
+      <%= link_to "Blog home", buttercms_blog_path %>
+    </div>
 
     <%= yield %>
 </body>

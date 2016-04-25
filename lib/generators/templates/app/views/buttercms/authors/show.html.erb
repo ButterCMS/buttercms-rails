@@ -5,13 +5,14 @@
 <h2><%= @author.first_name %> <%= @author.last_name %></h2>
 
 <!-- Author profile -->
-<div>
-  <%= @author.title %>
-  <%= @author.bio %>
-</div>
+<p><%= @author.title %></p>
+<p><%= @author.bio %></p>
 
 <!-- Recent posts -->
 <h4>Recent posts</h4>
-<% @author.recent_posts.each do |post| %>
-  <%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %>
-<% end %>
+
+<ul>
+  <% @author.recent_posts.each do |post| %>
+    <li><%= render :partial => 'buttercms/posts/post', :locals => {:post => post} %></li>
+  <% end %>
+</ul>

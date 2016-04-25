@@ -5,7 +5,9 @@
 <h2><%= @post.title %></h2>
 
 <!-- Post author -->
-<%= link_to "#{@post.author.first_name} #{@post.author.last_name}", buttercms_author_path(@post.author.slug) %>
+<p>
+  <%= link_to "#{@post.author.first_name} #{@post.author.last_name}", buttercms_author_path(@post.author.slug) %>
+</p>
 
 <!-- Post categories -->
 <% @post.categories.each do |category| %>
@@ -13,7 +15,7 @@
 <% end %>
 
 <!-- Publish date -->
-<%= @post.published %>
+<p><%= @post.published %></p>
 
 <!-- Post body -->
 <%= @post.body.html_safe %>
@@ -22,6 +24,10 @@
 <% if @next_post %>
   <%= link_to @next_post.title, buttercms_post_path(@next_post.slug), :title => @next_post.title %>
 <% end %>
+
+<!--
+// For sharing, we recommend https://www.addthis.com/get/sharing or https://sumome.com/app/share
+-->
 
 <!--
 // For commenting, we recommend https://disqus.com/

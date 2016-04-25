@@ -3,13 +3,13 @@
   <%= image_tag(post.featured_image) if post.featured_image %>
 
   <!-- Post title -->
-  <%= link_to post.title, buttercms_post_path(post.slug), :title => post.title %>
+  <h4><%= link_to post.title, buttercms_post_path(post.slug), :title => post.title %></h4>
 
   <!-- Post author -->
-  <%= link_to "#{post.author.first_name} #{post.author.last_name}", buttercms_author_path(post.author.slug) %>
+  by <%= link_to "#{post.author.first_name} #{post.author.last_name}", buttercms_author_path(post.author.slug) %>
 
   <!-- Post summary -->
-  <%= post.summary %>
+  <p><%= post.summary %></p>
 
   <!-- Post categories -->
   <% post.categories.each do |category| %>
