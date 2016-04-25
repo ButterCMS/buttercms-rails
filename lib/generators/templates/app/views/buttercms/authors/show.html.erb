@@ -5,8 +5,12 @@
 <h2><%= @author.first_name %> <%= @author.last_name %></h2>
 
 <!-- Author profile -->
-<p><%= @author.title %></p>
-<p><%= @author.bio %></p>
+<% if @author.profile_image %>
+  <img src="<%= @author.profile_image %>" />
+<% end %>
+
+<p>Title: <%= @author.title %></p>
+<p>Bio: <%= @author.bio %></p>
 
 <!-- Recent posts -->
 <h4>Recent posts</h4>
