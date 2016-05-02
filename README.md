@@ -7,7 +7,7 @@ The ButterCMS Rails SDK provides a generator that expedites setup of your blog.
 To get started, first install the gem by adding it to your Gemfile:
 
 ```
-gem 'buttercms-rails', '~>1.0.2'
+gem 'buttercms-rails', '~> 1.0.4'
 ```
 
 After installing, run the genereator provided by the gem:
