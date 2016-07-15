@@ -2,6 +2,10 @@
 
 The ButterCMS Rails SDK provides a generator that expedites setup of your blog.
 
+## Documentation
+
+For a comprehensive list of examples and API docs, check out our [documentation](https://buttercms.com/docs/).
+
 ### Installation
 
 To get started, first install the gem by adding it to your Gemfile:
