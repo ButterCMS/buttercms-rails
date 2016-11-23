@@ -71,3 +71,7 @@ After running the generator, set your API token in `config/initializers/buttercm
 ### Customization
 
 Extending and customizing your blog is easy. The ButterCMS Rails SDK uses the [ButterCMS Ruby API Client](https://github.com/buttercms/buttercms-ruby). Email [support@buttercms.com](mailto:support@buttercms.com) for help!
+
+### Fallback Data Store
+
+The ButterCMS Ruby client supports automatic fallback to a data store when API requests fail. Learn more in the [buttercms-ruby README](https://github.com/buttercms/buttercms-ruby/tree/master#fallback-data-store).
