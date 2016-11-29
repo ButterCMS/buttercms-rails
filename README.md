@@ -11,7 +11,7 @@ For a comprehensive list of examples and API docs, check out our [documentation]
 To get started, first install the gem by adding it to your Gemfile:
 
 ```
-gem 'buttercms-rails', '~> 1.0.5'
+gem 'buttercms-rails'
 ```
 
 After installing, run the genereator provided by the gem:
