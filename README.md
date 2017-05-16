@@ -84,3 +84,6 @@ Test mode can be used to setup a staging website for previewing content or for t
 ButterCMS::test_mode = true
 ```
 
+### Other
+
+View Rails [Blog engine](https://buttercms.com/rails-blog-engine/) and [Full CMS](https://buttercms.com/rails-cms/) for other examples of using ButterCMS with Rails.
