@@ -15,7 +15,7 @@
 <% end %>
 
 <!-- Publish date -->
-<p><%= @post.published %></p>
+<p><%= Time.parse(@post.published).strftime('%B %d, %Y') %></p>
 
 <!-- Post body -->
 <%= @post.body.html_safe %>
