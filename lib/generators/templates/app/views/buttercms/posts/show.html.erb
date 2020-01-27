@@ -25,6 +25,11 @@
   <%= link_to @next_post.title, buttercms_post_path(@next_post.slug), :title => @next_post.title %>
 <% end %>
 
+<!-- Link to Previous Post --> 
+<% if @previous_post %>
+  <%= link_to @previous_post.title, buttercms_post_path(@previous_post.slug), :title => @previous_post.title %>
+<% end %>
+
 <!--
 // For sharing, we recommend https://www.addthis.com/get/sharing or https://sumome.com/app/share
 -->
