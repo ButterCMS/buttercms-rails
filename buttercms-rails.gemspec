@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
   s.require_paths = ["lib"]
   s.summary = 'A Rails gem for the buttercms.com REST API'
-  s.description = 'Butter is a blogging platform loved by engineers. See https://buttercms.com for details.'
+  s.description = 'Butter is a headless CMS loved by engineers. See https://buttercms.com for details.'
   s.authors = ["ButterCMS"]
   s.email= ["support@buttercms.com"]
   s.homepage = "https://buttercms.com/docs"
