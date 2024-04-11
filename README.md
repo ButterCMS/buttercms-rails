@@ -1,6 +1,10 @@
-# ButterCMS Rails SDK
+# ButterCMS Rails Blog Generator 
 
-The ButterCMS Rails SDK provides a generator that expedites setup of your blog.
+This repo provides a generator that expedites setup of your ButterCMS blog into a currently existing Rails project.
+This repo is no longer being currently maintained; however, if you'd like to try out ButterCMS and Rails 
+with our new [Rails Starter Project](https://buttercms.com/starters/rails-starter-project/), you can
+be up and running with a Rails + ButterCMS project within two minutes--including a hosted deployment
+to Heroku!
 
 ## Documentation
 
